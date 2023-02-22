@@ -64,7 +64,7 @@ const state = reactive({
 })
 const formRef = ref()
 const getDetail = (id) => {
-  axios.get('`/categories/${id}`').then(res => {
+  axios.get(`/categories/${id}`).then(res => {
     state.ruleForm = {
       name: res.categoryName,
       rank: res.categoryRank
@@ -77,6 +77,7 @@ const open = (id) => {
   state.visible = true
   if (id) {
     state.id = id
+    console.log('id', id)
     // 如果是有 id 传入，证明是修改模式
     getDetail(id)
   }

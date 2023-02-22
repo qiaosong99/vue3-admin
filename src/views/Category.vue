@@ -149,6 +149,7 @@ const handleAdd = () => {
 }
 // 修改分类
 const handleEdit = (id) => {
+  console.log('修改分类',id)
   state.type = 'edit' // 传入弹窗组件用于弹窗 title 判断
   addCate.value.open(id)
 }

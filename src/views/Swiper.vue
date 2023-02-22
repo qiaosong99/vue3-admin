@@ -55,12 +55,12 @@
         width="100"
       >
         <template #default="scope">
-          <a style="cursor: pointer; margin-right: 10px" @click="handleEdit(scope.row.configId)">修改</a>
+          <a style="cursor: pointer; margin-right: 10px" @click='handleEdit(scope.row.carouselId)'>修改</a>
           <el-popconfirm
             title="确定删除吗？"
             confirmButtonText='确定'
             cancelButtonText='取消'
-            @confirm="handleDeleteOne(scope.row.configId)"
+            @confirm='handleDeleteOne(scope.row.carouselId)'
           >
             <template #reference>
               <a style="cursor: pointer">删除</a>
@@ -93,6 +93,7 @@ const handleAdd = () => {
 }
 // 修改轮播图
 const handleEdit = (id) => {
+  console.log('修改轮播图',id)
   state.type = 'edit'
   addSwiper.value.open(id)
 }
