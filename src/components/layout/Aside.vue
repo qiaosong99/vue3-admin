@@ -11,8 +11,7 @@
   <el-scrollbar>
   <div class="head">
     <div>
-      <img src="//s.weituibao.com/1582958061265/mlogo.png" alt="logo" class="img">
-      <span>后台管理系统</span>
+      <span>国网后台管理系统</span>
     </div>
   </div>
   <!-- 为了美观的线 -->
